@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Menu</title>
+</head>
+<body>
+ 
+ 
+ <h4>View Customer Accounts</h4>
+ <form action ="ViewCustomerAccounts" method="post">
+ Enter the id of the customer whose accounts you would like to view :  <input type="text" name="customerId" /><br/>
+<input type = "submit" value="Submit"/> 
+</form>
+
+<a href="CheckPendingAccounts" >View Pending Accounts</a><br>
+
+<h4>Approve Pending Accounts</h4>
+ <form action ="ApprovePendingAccounts" method="post">
+ Enter the id of the account you would like to approve :  <input type="text" name="pendingAccountId" /><br/>
+<input type = "submit" value="Submit"/> 
+</form>
+
+<h4>Approve Pending Accounts</h4>
+ <form action ="RejectPendingAccounts" method="post">
+ Enter the id of the account you would like to reject :  <input type="text" name="rejectPendingAccount" /><br/>
+<input type = "submit" value="Submit"/> 
+</form>
+
+
+<a href="ViewTransactionLog" >View Transaction Log</a><br>
+
+<a href="LogOut" > Log Out</a> 
+
+</body>
+</html>

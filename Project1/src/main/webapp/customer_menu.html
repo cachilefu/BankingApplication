@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Customer Menu</title>
+</head>
+<body>
+Welcome! What would you like to do? <br>
+
+<a href="ViewAccounts" >View Accounts</a>  <br>
+
+<h4>Make a Withdrawal</h4>
+
+
+<form action ="Withdrawal" method="post">
+Enter the Account Number You Would Like To Withdraw From : <input type="text" name="withdrawalAccount" /><br/>
+How Much Would You Like To Withdraw? <input type="text" name= "withdrawalAmount">
+<input type = "submit" value="Submit"/> 
+</form>
+
+
+<h4>Make a Deposit</h4>
+
+
+<form action ="Deposit" method="post">
+Enter the Account Number You Would Like To Deposit To : <input type="text" name="depositAccount" /><br/>
+How Much Would You Like To Deposit? <input type="text" name= "depositAmount">
+<input type = "submit" value="Submit"/> 
+</form>
+
+<h4>Make a Transfer</h4>
+
+<form action ="Transfer" method="post">
+Enter The ID of the Account You Would Like to transfer From. <input type="text" name="originAccount" /><br/>
+Enter How Much You You Would Like To Transfer <input type="text" name="transferAmount" /><br/>
+Enter The Account Number You Would Like To Transfer To. <input type="text" name= "destinationAccount">
+<input type = "submit" value="Submit"/> 
+</form>
+
+<a href="ViewPendingTransfers" >View Pending Transfers</a>
+
+<h4>Accept A Transfer</h4>
+
+<form action ="ApproveTransferAmount" method="post">
+Enter the account number that the transfer is from <input type="text" name= "approveOriginAccount" /><br/>
+Enter the account number that the transfer is going to <input type="text" name= "approveDestinationAccount" /><br/>
+Enter the amount that is being transfered <input type="text" name= "approveAmount">
+Enter the transfer id <input type="text" name= "approveTransferId">
+<input type = "submit" value="Submit"/> 
+</form>
+
+
+<h4>Reject A Transfer</h4>
+
+<form action ="RejectTransfers" method="post">
+
+Enter the transfer id of the transfer you would like to reject. <input type="text" name= "rejectTransferId">
+<input type = "submit" value="Submit"/> 
+</form>
+
+<h4>Apply For A New Account</h4>
+<form action ="AccountApplication" method="post">
+How much would you like to start out with? : <input type="text" name="initialBalance" /><br/>
+Is this a Savings Account or a Checking Account? : <input type="text" name="accountType" /><br/>
+
+<input type = "submit" value="Submit"/> 
+</form>
+
+<a href="LogOut" > Log Out</a>
+
+
+
+</body>
+</html>
